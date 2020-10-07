@@ -17,7 +17,6 @@ app = FastAPI(title="REST API using electric cars")
 
 @app.get("/annonces")
 async def annonce_id ():
-    annonce = {}
     c.execute("SELECT * FROM newfile1;")
     annonce = c.fetchall()
     conn.commit()
